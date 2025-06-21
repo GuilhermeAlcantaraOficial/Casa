@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paulo Bilolão - Loja de Violões</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .produto {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .produto img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .produto-info {
+      flex: 1;
+    }
+
+    .produto-info h2 {
+      color: #222;
+    }
+
+    .preco {
+      color: #c0392b;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .produto {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .produto img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Paulo Bilolão</h1>
+    <p>Os melhores violões do Brasil!</p>
+  </header>
+
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container" id="produtos">
+    <div class="produto">
+      <img src="https://i.pinimg.com/originals/36/58/57/365857ff71c7274d18d61035f8fe5da6.jpg" alt="Violão Rosa">
+      <div class="produto-info">
+        <h2>Violão Rosa Edição Luxo</h2>
+        <p>Um violão rosa vibrante, feito para quem tem estilo e ama se destacar no palco.</p>
+        <p class="preco">R$ 10.000,00</p>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=60" alt="Violão Profissional">
+      <div class="produto-info">
+        <h2>Violão Profissional</h2>
+        <p>Som encorpado, acabamento refinado, ideal para apresentações.</p>
+        <p class="preco">R$ 1.299,00</p>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contato">
+    <p>Contato: paulobilolao@lojadevisoal.com.br</p>
+    <p>&copy; 2025 Paulo Bilolão - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
+
